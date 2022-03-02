@@ -215,3 +215,7 @@ button:hover {
     margin-top: 7rem;
   }
 }
+
+.footerlinks li {
+  display: inline-flex;
+}

@@ -10,14 +10,13 @@
 
 
     {% block head %}
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='static/css/style.css') }}"/>
 
         <title>{% block title %}{% endblock %}This is {{ name }} Website</title>
     {% endblock %}
 
 </head>
 <body>
-
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -140,7 +139,7 @@
                 <use xlink:href="#bootstrap"/>
             </svg>
         </a>
-        <span class="text-muted">&copy; 2021 Company, Inc</span>
+        <span class="text-muted">&copy;Copyright: 2022 / $100 / Environment: {env} / Environment: development / FHA, Inc</span>
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -159,6 +158,14 @@
                 <use xlink:href="#facebook"/>
             </svg>
         </a></li>
+        <div class="footerlinks">
+        <li class="ms-3"><a class="nav-link" href="/about">About</a></li>
+        <li class="ms-3"><a class="nav-link" href="/page1">Page 1</a><li>
+        <li class="ms-3"><a class="nav-link" href="/page2">Page 2</a><li>
+        <li class="ms-3"><a class="nav-link" href="/page3">Page 3</a><li>
+        <li class="ms-3"><a class="nav-link" href="/page4">Page 4</a><li>
+        <li class="ms-3"><a class="nav-link" href="/page5">Page 5</a><li>
+        </div>
     </ul>
 </footer>
 
